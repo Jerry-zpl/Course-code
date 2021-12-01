@@ -1,0 +1,24 @@
+
+Data Collection (Compiled Data)
+
+File:     c:\users\dell\desktop\training5.inp
+Comment:  
+Date:     2008Äê8ÔÂ28ÈÕ 17:03:17
+
+Measurement     1: Data Collection Point(s) 1
+
+Measur.: Data Collection Number
+from: Start time of the Aggregation interval
+to: End time of the Aggregation interval
+Number Veh: Number of Vehicles
+Speed: Speed [km/h]
+
+Measur.;from;to;Number Veh;Speed
+       ;    ;  ;;Minimum
+       ;    ;  ;all veh. types;all veh. types
+1;0;30;3;25.5
+1;30;60;9;47.4
+1;60;90;5;30.2
+1;90;120;2;6.0
+1;120;150;7;11.8
+1;150;161;4;26.9

@@ -1,0 +1,21 @@
+
+Node evaluation
+
+File:     c:\users\dell\desktop\training4.inp
+Comment:  
+Date:     2008Äê8ÔÂ27ÈÕ 17:19:18
+
+Node 1
+
+Delay(All): Average delay per vehicle [s], All Vehicle Types
+aveQueue: Average Queue Length [m]
+Movement: Movement (Bearing from-to)
+
+Delay(All); aveQueue; Movement; 
+       0.8;      0.0;      S-N; 
+       9.7;      1.0;      S-N; 
+      11.1;      2.5;      N-S; 
+       9.5;      2.1;      E-W; 
+      10.3;      4.1;      W-E; 
+       9.3;      1.9;      All; 
+       9.3;      1.9;      All; 

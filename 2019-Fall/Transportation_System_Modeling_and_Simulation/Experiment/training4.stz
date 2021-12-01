@@ -1,0 +1,17 @@
+
+Queue Length Record
+
+File:     c:\users\dell\desktop\training4.inp
+Comment:  
+Date:     2008Äê8ÔÂ27ÈÕ 17:19:18
+
+Queue Counter        1: Link     1 At     491.100 m
+
+Avg.: average queue length [m] within time interval
+Max.: maximum queue length [m] within time interval
+Stop: number of stops within queue
+
+  Time; Avg.; max;Stop; 
+  No.:;    1;   1;   1; 
+   600;    0;  12;   2; 
+   611;    0;   0;   0; 
