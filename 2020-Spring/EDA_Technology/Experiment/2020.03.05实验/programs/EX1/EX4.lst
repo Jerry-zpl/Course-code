@@ -1,0 +1,227 @@
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 1
+
+
+
+
+
+       MCS-51 Family Macro Assembler   A S E M - 5 1   V 1.3
+       =====================================================
+
+
+
+	Source File:	EX4.ASM
+	Object File:	EX4.hex
+	List File:	EX4.lst
+
+
+
+ Line  I  Addr  Code            Source
+
+    1:		N      0100	ORG 0100H
+    2:
+    3:	  0100	75 40 12	MOV 40H, #12H
+    4:
+    5:	  0103	7A 34		MOV R2, #34H
+    6:
+    7:	  0105	74 56		MOV A, #56H
+    8:
+    9:	  0107	A8 40		MOV R0, 40H
+   10:
+   11:	  0109	8A 50		MOV 50H, R2
+   12:
+   13:	  010B	F6		MOV @R0, A
+   14:
+   15:	  010C	75 34 FE	MOV 34H, #0FEH
+   16:
+   17:	  010F	79 34		MOV R1, #34H
+   18:
+   19:	  0111	7F 78		MOV R7, #78H
+   20:
+   21:	  0113	7B 3C		MOV R3, #3CH
+   22:
+   23:	  0115	E9		MOV A, R1
+   24:
+   25:	  0116	E7		MOV A, @R1
+   26:
+   27:	  0117	E5 40		MOV A, 40H
+   28:
+   29:	  0119	74 50		MOV A, #50H
+   30:
+   31:	  011B	75 D0 08	MOV PSW, #08H
+   32:
+   33:	  011E	F8		MOV R0, A
+   34:
+   35:	  011F	FD		MOV R5, A
+   36:
+   37:	  0120	FC		MOV R4, A
+   38:
+   39:	  0121	A9 40		MOV R1, 40H
+   40:
+   41:	  0123	AA 50		MOV R2, 50H
+   42:
+   43:	  0125	AB 34		MOV R3, 34H
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 2
+
+
+
+ Line  I  Addr  Code            Source
+
+   44:
+   45:	  0127	7E 5D		MOV R6, #5DH
+   46:
+   47:	  0129	7F 79		MOV R7, #79H
+   48:
+   49:	  012B	F5 30		MOV 30H, A
+   50:
+   51:	  012D	F5 80		MOV 80H, A
+   52:
+   53:	  012F	8E 36		MOV 36H, R6
+   54:
+   55:	  0131	8F 37		MOV 37H, R7
+   56:
+   57:	  0133	85 50 70	MOV 70H, 50H
+   58:
+   59:	  0136	85 40 71	MOV 71H, 40H
+   60:
+   61:	  0139	86 73		MOV 73H, @R0
+   62:
+   63:	  013B	87 74		MOV 74H, @R1
+   64:
+   65:	  013D	75 75 57	MOV 75H, #057H
+   66:
+   67:	  0140	F6		MOV @R0, A
+   68:
+   69:	  0141	F7		MOV @R1, A
+   70:
+   71:	  0142	A6 70		MOV @R0, 70H
+   72:
+   73:	  0144	77 77		MOV @R1, #77H
+   74:
+   75:	  0146	90 12 34	MOV DPTR, #1234H
+   76:
+   77:	  0149	75 60 65	MOV 60H, #65H
+   78:
+   79:	  014C	78 60		MOV R0, #60H
+   80:
+   81:	  014E	74 24		MOV A, #24H
+   82:
+   83:	  0150	C6		XCH A, @R0
+   84:
+   85:	  0151	C8		XCH A, R0
+   86:
+   87:	  0152	75 65 17	MOV 65H, #17H
+   88:
+   89:	  0155	C4		SWAP A
+   90:
+   91:	  0156	C5 65		XCH A, 65H
+   92:
+   93:				END
+
+
+
+
+
+                     register banks used:  ---
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 3
+
+
+
+
+                     no errors
+
+
+
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 4
+
+
+
+
+
+	       L I S T   O F   S Y M B O L S
+	       =============================
+
+
+SYMBOL				  TYPE     VALUE	LINE
+------------------------------------------------------------
+??ASEM_51			  NUMBER    8051
+??VERSION			  NUMBER    0130
+AC				  BIT	      D6
+ACC				  DATA	      E0
+B				  DATA	      F0
+CY				  BIT	      D7
+DPH				  DATA	      83
+DPL				  DATA	      82
+EA				  BIT	      AF
+ES				  BIT	      AC
+ET0				  BIT	      A9
+ET1				  BIT	      AB
+EX0				  BIT	      A8
+EX1				  BIT	      AA
+EXTI0				  CODE	    0003
+EXTI1				  CODE	    0013
+F0				  BIT	      D5
+IE				  DATA	      A8
+IE0				  BIT	      89
+IE1				  BIT	      8B
+INT0				  BIT	      B2
+INT1				  BIT	      B3
+IP				  DATA	      B8
+IT0				  BIT	      88
+IT1				  BIT	      8A
+OV				  BIT	      D2
+P				  BIT	      D0
+P0				  DATA	      80
+P1				  DATA	      90
+P2				  DATA	      A0
+P3				  DATA	      B0
+PCON				  DATA	      87
+PS				  BIT	      BC
+PSW				  DATA	      D0
+PT0				  BIT	      B9
+PT1				  BIT	      BB
+PX0				  BIT	      B8
+PX1				  BIT	      BA
+RB8				  BIT	      9A
+RD				  BIT	      B7
+REN				  BIT	      9C
+RESET				  CODE	    0000
+RI				  BIT	      98
+RS0				  BIT	      D3
+RS1				  BIT	      D4
+RXD				  BIT	      B0
+SBUF				  DATA	      99
+SCON				  DATA	      98
+SINT				  CODE	    0023
+SM0				  BIT	      9F
+
+ASEM-51 V1.3                                         Copyright (c) 2002 by W.W. Heinz                                         PAGE 5
+
+
+
+SYMBOL				  TYPE     VALUE	LINE
+------------------------------------------------------------
+SM1				  BIT	      9E
+SM2				  BIT	      9D
+SP				  DATA	      81
+T0				  BIT	      B4
+T1				  BIT	      B5
+TB8				  BIT	      9B
+TCON				  DATA	      88
+TF0				  BIT	      8D
+TF1				  BIT	      8F
+TH0				  DATA	      8C
+TH1				  DATA	      8D
+TI				  BIT	      99
+TIMER0				  CODE	    000B
+TIMER1				  CODE	    001B
+TL0				  DATA	      8A
+TL1				  DATA	      8B
+TMOD				  DATA	      89
+TR0				  BIT	      8C
+TR1				  BIT	      8E
+TXD				  BIT	      B1
+WR				  BIT	      B6
