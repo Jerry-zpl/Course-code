@@ -1,0 +1,4 @@
+LiuShuiDeng.dsn文件为本实验所需要提交的dsn文件
+JiaoTiLiangMie.asm文件为第一个小实验的代码；
+LiuShuiDeng.asm文件为第二个小实验的代码；
+文件夹中还包括其他的相关编程文件，请老师查阅，谢谢老师！
