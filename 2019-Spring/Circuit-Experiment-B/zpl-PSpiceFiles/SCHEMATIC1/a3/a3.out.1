@@ -1,0 +1,45 @@
+
+**** 05/10/19 18:07:08 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a3"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "a3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\DELL\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 50 1k 100k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ZPL
+I_I1         N01367 N01395 DC 0Adc AC 1Aac 
+L_L1         N01395 N01367  0.4m  
+C_C1         N01395 N01367  1u  TC=0,0 
+R_R1         N01395 N01367  1k TC=0,0 
+
+**** RESUMING a3.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N01367 is floating
+
+ERROR(ORPSIM-15142): Node N01395 is floating
+

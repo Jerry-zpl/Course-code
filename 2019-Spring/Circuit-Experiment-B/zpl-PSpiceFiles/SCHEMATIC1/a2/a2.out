@@ -1,0 +1,60 @@
+
+**** 05/10/19 18:01:21 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a2"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "a2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\DELL\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 1 10 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ZPL
+R_R2         N1 N00113  10 TC=0,0 
+V_V1         N1 0 8Vdc
+R_R3         N00113 N00113  5 TC=0,0 
+R_R4         0 N00113  34 TC=0,0 
+R_R1         0 N1  4 TC=0,0 
+I_I1         N00113 0 DC 3Adc  
+
+**** RESUMING a2.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+**** 05/10/19 18:01:21 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a2"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

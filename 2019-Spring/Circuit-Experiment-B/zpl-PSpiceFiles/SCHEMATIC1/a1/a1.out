@@ -1,0 +1,101 @@
+
+**** 05/10/19 17:56:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a1"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "a1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\DELL\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ZPL
+R_R2         N1 0  10k TC=0,0 
+V_V1         N1 0 8Vdc
+R_R3         0 0  5 TC=0,0 
+R_R4         0 0  34 TC=0,0 
+R_R1         0 N1  4 TC=0,0 
+I_I1         0 0 DC 3Adc  
+
+**** RESUMING a1.cir ****
+.END
+
+**** 05/10/19 17:56:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a1"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a1.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   N1)    8.0000  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.001E+00
+
+    TOTAL POWER DISSIPATION   1.60E+01  WATTS
+
+
+**** 05/10/19 17:56:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a1"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a1.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+          JOB CONCLUDED
+
+**** 05/10/19 17:56:43 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a1"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

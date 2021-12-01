@@ -1,0 +1,9 @@
+* source ZPL
+V_Us         N1 0 30Vdc
+R_R1         N1 N2  100 TC=0,0 
+R_R2         N3 N2  200 TC=0,0 
+R_R3         N4 N2  1k TC=0,0 
+R_R6         N01907 N4  51 TC=0,0 
+I_I1         N3 N01907 DC 1Adc  
+R_R5         0 N4  2k TC=0,0 
+G_G1         N3 0 N1 N2 3

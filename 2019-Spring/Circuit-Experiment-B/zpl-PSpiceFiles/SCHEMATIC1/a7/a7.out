@@ -1,0 +1,118 @@
+
+**** 05/10/19 19:13:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a7"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a7.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "a7.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\DELL\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.SENS V([N4]) 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ZPL
+V_Us         N1 0 30Vdc
+R_R1         N1 N2  100 TC=0,0 
+R_R2         N3 N2  200 TC=0,0 
+R_R3         N4 N2  1k TC=0,0 
+R_R6         N01907 N4  51 TC=0,0 
+I_I1         N3 N01907 DC 1Adc  
+R_R5         0 N4  2k TC=0,0 
+G_G1         N3 0 N1 N2 3
+
+**** RESUMING a7.cir ****
+.END
+
+**** 05/10/19 19:13:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a7"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a7.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   N1)   30.0000  (   N2)   30.1150  (   N3) -100.9800  (   N4)  686.7400      
+
+(N01907)  737.7400 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Us         1.148E-03
+
+    TOTAL POWER DISSIPATION  -3.45E-02  WATTS
+
+
+**** 05/10/19 19:13:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a7"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a7.sim ] 
+
+
+ ****     DC SENSITIVITY ANALYSIS          TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+DC SENSITIVITIES OF OUTPUT V(N4)
+
+         ELEMENT         ELEMENT         ELEMENT       NORMALIZED
+          NAME            VALUE       SENSITIVITY     SENSITIVITY
+                                      (VOLTS/UNIT) (VOLTS/PERCENT)
+
+          R_R1          1.000E+02      -2.561E-06      -2.561E-06
+          R_R2          2.000E+02      -4.372E-10      -8.744E-10
+          R_R3          1.000E+03       4.378E-01       4.378E+00
+          R_R6          5.100E+01      -6.667E-10      -3.400E-10
+          R_R5          2.000E+03       1.144E-01       2.289E+00
+          V_Us          3.000E+01       6.667E-01       2.000E-01
+          I_I1          1.000E+00       6.667E+02       6.667E+00
+
+
+          JOB CONCLUDED
+
+**** 05/10/19 19:13:22 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a7"  [ C:\Users\DELL\Desktop\zpl-PSpiceFiles\SCHEMATIC1\a7.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+
