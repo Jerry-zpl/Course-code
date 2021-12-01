@@ -1,0 +1,45 @@
+
+**** 05/10/19 19:51:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a10"  [ C:\Users\DELL\Desktop\zpl2-PSpiceFiles\SCHEMATIC1\a10.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "a10.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\DELL\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC LIN 1 1 1000
+.STEP LIN PARAM Cv 0.1u 20u 0.01u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ZPL2
+V_V1         N1 0 DC 0Vdc AC 5Vac 
+C_C1         N1 N2  Cv  TC=0,0 
+------------------------$
+ERROR(ORPSIM-16152): Invalid number: Error while converting token 'TC' to double value. Token can be a constant or expression
+L_L1         N2 0  300m  
+R_R1         0 N2  1k TC=0,0 
+.PARAM  cv=1u
+
+**** RESUMING a10.cir ****
+.END
+

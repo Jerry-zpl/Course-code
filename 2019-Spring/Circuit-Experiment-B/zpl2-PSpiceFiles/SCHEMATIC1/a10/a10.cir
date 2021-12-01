@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-a10"  [ C:\Users\DELL\Desktop\zpl2-PSpiceFiles\SCHEMATIC1\a10.sim ] 
+
+** Creating circuit file "a10.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\DELL\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC LIN 1 1 1000
+.STEP LIN PARAM Cv 0.1u 20u 0.01u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END
