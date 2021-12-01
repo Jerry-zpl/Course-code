@@ -1,0 +1,47 @@
+|41
+p <= 7420:inst5.1
+D => 7400:inst2.3
+D => 7420:inst4.5
+A => 7400:inst2.2
+A => 7400:inst.2
+A => 7400:inst1.2
+B => 7400:inst.3
+B => 7420:inst4.2
+B => 7420:inst4.3
+C => 7400:inst1.3
+
+
+|41|7420:inst5
+1 <= 6.DB_MAX_OUTPUT_PORT_TYPE
+2 => 6.IN0
+3 => 6.IN1
+4 => 6.IN2
+5 => 6.IN3
+
+
+|41|7400:inst2
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|41|7400:inst
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|41|7400:inst1
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|41|7420:inst4
+1 <= 6.DB_MAX_OUTPUT_PORT_TYPE
+2 => 6.IN0
+3 => 6.IN1
+4 => 6.IN2
+5 => 6.IN3
+
+
