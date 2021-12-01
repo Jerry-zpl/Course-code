@@ -31,7 +31,7 @@ int main()
             }
             printf("\n");
         }
-        printf("相加运算");
+        printf("脧脿录脫脭脣脣茫");
 
         flag=jia(a,b);
     }
@@ -56,7 +56,7 @@ int main()
             }
             printf("\n");
         }
-            printf("相减运算");
+            printf("脧脿录玫脭脣脣茫");
             flag=jian(a,b);
     }
     else if(op=3)
@@ -79,7 +79,7 @@ int main()
             }
             printf("\n");
         }
-            printf("相乘运算");
+            printf("脧脿鲁脣脭脣脣茫");
             flag=cheng(a,b);
     }
     if(flag==1)
